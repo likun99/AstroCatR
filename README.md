@@ -1,9 +1,9 @@
 # AstroCatR
 A Tool for Time Series Reconstruction of Large-Scale Astronomical Catalogs
 
-This is the main source code of ETSR, which can reconstructe all celestaial bodies' time series data for astronomical catalogs.
+This is the main source code of AstroCatR, which can reconstructe all celestaial bodies' time series data for astronomical catalogs.
 
-ETSR contains three parts, ETL Preprocessing, Matching Calculation and time series data retrieval. You need to have original catalogs, then run program ETL Preprocessing to generate sky zoning file. Next, run program Matching Calculation to mark celestaial bodies. Finally, run program Query to search the objects from time series datasets which matched with the target. If you want to run it on multi-node environment, use Partition Function to distribute the data to each node, and upload the code packages.
+AstroCatR contains three parts, ETL Preprocessing, Matching Calculation and time series data retrieval. You need to have original catalogs, then run program ETL Preprocessing to generate sky zoning file. Next, run program Matching Calculation to mark celestaial bodies. Finally, run program Query to search the objects from time series datasets which matched with the target. If you want to run it on multi-node environment, use Partition Function to distribute the data to each node, and upload the code packages.
 
 # Prerequisites
 This program has the following dependencies, which can be found in main directory.
