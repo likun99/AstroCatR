@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<math.h>
+#include<malloc.h>
+#include<stdlib.h>
+#include <time.h>
+
+#include "var.h"
+#include "function.h"
+
+
+void get_imagetime(char *str)
+{
+	int year,day;
+	int month;
+	int hour, min, sec;
+	int a,b;
+	char tp[11],tp1[50];
+	
+	sscanf(str,"%[^_]s_%s",tp,tp1);
+	
+	if(strncmp(tp,"diff",4))
+	{
+		sscanf(str,"%*[^_]_%*[^_]_%d.%d_%*s",&a,&b);
+		mode=0;
+	}
+	else
+	{
+		sscanf(str,"%*[^_]_%*[^_]_%*[^_]_%d.%d_%*s",&a,&b);
+		mode=1;
+	}
+	
+	
+	year=a/10000;
+	a=a%10000;
+	year=year+100;
+	
+	month=a/100;
+	a=a%100;
+	
+	day=a;
+
+	hour=b/10000;
+	b=b%10000;
+	
+	min=b/100;
+	b=b%100;
+	
+	sec=b;
+	
+	sprintf(image_time,"%d-%d-%d %d:%d:%d",year+1900,month, day , hour , min , sec);
+	
+	return;
+	
+}

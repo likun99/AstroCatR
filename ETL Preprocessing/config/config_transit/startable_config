@@ -1,0 +1,27 @@
+XWIN_IMAGE	double
+YWIN_IMAGE	double
+ERRX2WIN_IMAGE	double
+ERRY2WIN_IMAGE	double
+ALPHAWIN_J2000	double
+DELTAWIN_J2000	double
+MAG_APER	float	4
+MAGERR_APER	float	4
+FLUX_AUTO	float
+FLUXERR_AUTO	float
+MAG_AUTO	float
+MAGERR_AUTO	float
+BACKGROUND      float
+FWHM_IMAGE      float
+AWIN_IMAGE      float
+BWIN_IMAGE      float
+THETAWIN_IMAGE	float
+ERRAWIN_IMAGE   float
+ERRBWIN_IMAGE   float
+ERRTHETAWIN_IMAGE       float
+FLAGS   int
+FLUX_RADIUS	float	2
+MAG_PETRO	float
+MAGERR_PETRO	float
+PETRO_RADIUS	float
+END
+

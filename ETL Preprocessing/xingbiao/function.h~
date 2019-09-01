@@ -1,0 +1,25 @@
+#ifndef FUNCTION_H
+#define FUNCTION_H
+
+#include "var.h"
+
+#define R_A 0.000277778
+#define R_B 0.000277778
+
+#define PI 3.1415926535
+
+#define MAXLINE 160
+
+//int crossmatch(char * ,char * ,int ,int);
+
+double square(double );
+
+void read_fits(char *,NCstar *);
+
+//char read_config(char *);
+
+void read_table_conf(char *);
+
+void get_imagetime(char *);
+
+#endif

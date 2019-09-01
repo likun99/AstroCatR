@@ -1,0 +1,63 @@
+#ifndef VAR_H
+#define VAR_H
+
+#include <time.h>
+#define MAXNAMELEN 100
+
+typedef struct typenum
+{
+	int float_num;
+	int long_num;
+	int int_num;
+	int byte_num;
+	int double_num;
+	int short_num;
+}TypeNum;
+
+TypeNum type_num;
+
+typedef struct QCstar
+{
+   double ra;
+   double dec;
+   int  helpixid;
+   int  htmid;
+}QCstar;
+
+typedef struct NCstar
+{
+	QCstar *qstar; 
+	float **float_data;
+	double **double_data;
+	int **int_data;
+	short **short_data;
+	long **long_data;
+	unsigned char **byte_data;
+}NCstar;
+
+NCstar store_star;
+
+char work_dir[MAXNAMELEN];
+
+int col_need_num;
+int mode;
+
+char image_time[100];
+
+double *rra;
+double *ddec;
+float *mag;
+float *magerr;
+
+long nrows;
+int ncols;
+
+char col_name[100][100];
+char col_datatype[100][100];
+int col_type[100];
+int col_array_num[100];
+int col_exist[100];
+
+double r_a,r_b;
+
+#endif

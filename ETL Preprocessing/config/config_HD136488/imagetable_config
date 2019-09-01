@@ -1,0 +1,14 @@
+EXPTIME	float
+CCDMODE	char
+RA_TARG	double
+DEC_TARG	double
+CCDTEMP	float
+SETTEMP	float
+ENVTEMP	float
+DATE-OBS	char
+AST3TME	float
+OBJECT	char
+SEXBKGND   float
+MAGZP   float
+END
+

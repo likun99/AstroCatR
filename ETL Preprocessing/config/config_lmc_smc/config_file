@@ -1,0 +1,36 @@
+
+
+***************************************   数据库信息 *************************************************
+
+HOSTNAME                 localhost
+USERNAME                 root
+PASSWORD                 naocgotodomea
+DATABASE                 ast3_data_lmc_smc
+BACKUPDATABASE		 ast3_data_backup
+MEMORYTABLE              query_m
+QUERYTABLE               query_i
+FINALTABLE               star_i
+IMAGETABLE		 image_table
+DIFFMEMORYTABLE          diff_query_m
+DIFFQUERYTABLE           diff_query_i
+DIFFFINALTABLE           diff_star_i
+DIFFIMAGETABLE		 diff_image_table
+
+MAXSTARNUM	50000000
+MAXDIFFSTARNUM	5000000
+
+QTTIMESNUM	3
+
+RA 	0.000555556
+RB 	0.000555556
+
+BACKUPDIR		 /data/ast3_db/backup
+
+SWITCHDIR	/ast3/database/set
+
+QTRESDIR	/ast3/database/stamp
+
+QTDIRTEMP	/ast3/tmp/qtres_temp
+
+QUERYDIRTEMP	/ast3/tmp/queryres_temp
+
