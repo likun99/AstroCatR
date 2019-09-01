@@ -2,8 +2,10 @@
 
 catdir=/home/allen/res
 
-for catfile in $catdir/*.txt;do
-  cat=`basename $catfile .txt`
+for catfile in $catdir/*.csv;do
+  cat=`basename $catfile .csv`     
+  ra=`(sed -n 1p $catfile | cut -d "," -f1)`
+  dec=`(sed -n 1p $catfile | cut -d "," -f2)`
 
 	gnuplot --persist <<EOF
 	set term post eps color enh solid
@@ -11,7 +13,7 @@ for catfile in $catdir/*.txt;do
 	datafile="$catfile"
 	set output "/home/allen/Time/ $cat.eps"
 	unset key
-	set title "light curve " . "$cat"
+	set title "Time series " . " RA = " . "$ra" . " DEC = " . "$dec"
 	set xlabel "Time"
 	set ylabel "Magnitude"
 	set datafile separator ","
