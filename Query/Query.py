@@ -133,7 +133,7 @@ if __name__ == '__main__':
 	phi = ra * d2r
 	hpid = ang2pix(8192,theta,phi)
 
-	tid = int(hpid/66541)
+	tid = int(hpid/4096)
 
 
 	l = file_name("/home/allen/txt2csv/out")
@@ -154,7 +154,7 @@ if __name__ == '__main__':
 		
 		for i in tar_dict:
 			if len(tar_dict[i]) >= 5:
-				out_path = "/home/allen/res/" + str(i) + ".txt"
+				out_path = "/home/allen/res/" + str(i) + ".csv"
 				out_file = open(out_path, "w")
 				out_list = tar_dict.get(i)
 				for j in out_list:
@@ -162,7 +162,7 @@ if __name__ == '__main__':
 	else:
 		print("There is no data for you require")
 
-	endtime = datetime.datetime.now()
-	print (endtime - starttime).seconds
+	#endtime = datetime.datetime.now()
+	#print (endtime - starttime).seconds
 	
 
